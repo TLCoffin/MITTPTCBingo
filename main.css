@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header, main, footer {
+  width: 90%;
+  background-color: #cfcfcf;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  margin-bottom: 0.4rem;
+}
+
+body {
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  height: 15rem;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+td {
+  border: 1px solid black;
+  background-color: #a9a9a9;
+  padding: 5% 0;
+  height: 2rem;
+  width: 20%;
+  scale: 100%;
+  rotate: 0deg;
+  transition: background-color 0.08s, scale 0.3s, rotate 0.3s;
+  /* text-overflow: ellipsis; */
+  overflow: hidden;
+}
+
+/* @media screen and (min-width: 642px) {
+  table tr:nth-of-type(3) td {
+    padding: 1%;
+  }
+} */
+
+/* Better hover and active effects on wider screens */
+
+@media screen and (min-width: 1050px) {
+  td:hover {
+    background-color: #979797;
+    scale: 94%;
+    rotate: 2deg;
+    transition: background-color 0.3s, scale 0.15s, rotate 0.3s;
+  }
+
+  td.clicked:hover {
+    background-color: #8178ff;
+    transition: background-color 0.05s, scale 0.15s, rotate 0.3s;
+  }
+
+  td:active {
+    scale: 90%;
+    rotate: 0deg;
+    transition: scale 0.15s, rotate 0.15s;
+  }
+}
+
+td p {
+  font-size: 0.8rem;
+}
+
+table img {
+  width: 90%;
+  margin: 0;
+}
+
+
+@media screen and (max-width: 458px) {
+  table p {
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+}
+
+.clicked {
+  background-color: #8178ff;
+}
+
+/* FIX SCREENS SMALLER THAN 484px */
+@media screen and (max-width: 480px) {
+  table td {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  table td {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 316px) {
+  table td {
+    font-size: 50%;
+  }
+}
+
+.generate {
+  padding:  1rem 4rem;
+  font-size: 1rem;
+  margin: 1rem;
+}
